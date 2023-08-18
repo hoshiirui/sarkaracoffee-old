@@ -3,6 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import GalleryCard from '../components/GalleryCard';
 import Grid from '@mui/material/Grid';
+import events from "./../data.json"
 
 
 const Homepage = () => {
@@ -10,12 +11,11 @@ const Homepage = () => {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="md" sx={{marginY: 4}}>
-      <h1>Hello World</h1>
+      <h1>Recent Events</h1>
         <Grid container spacing={4}>
-            <GalleryCard/>
-            <GalleryCard/>
-            <GalleryCard/>
-            <GalleryCard/>
+        {events.map((event) => (
+            <GalleryCard key={event.id} event={event}/>
+        ))}
         </Grid>
       </Container>
     </React.Fragment>

@@ -6,27 +6,44 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
-const GalleryCard = () => {
+interface GalleryCardProps{
+    event: {
+        id: number;
+        name: string;
+        date: string;
+        location: string;
+        image: string;
+        desc: string;
+    }
+}
+
+const GalleryCard: React.FC<GalleryCardProps> = ({event}) => {
+    const anchorStyles = {
+        textDecoration: 'none', // Remove underlining
+        color: 'inherit', // Inherit font color from parent
+    };
+
   return (
     <Grid item xs={12} xl={4} lg={4} md={4} sm={6}>
         <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-                <CardMedia
-                    component="img"
-                    height="140"
-                    image="https://images.unsplash.com/photo-1613257125720-c2f8a783416a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-                    alt="green iguana"
-                />
-                <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                    Misaki no Matsuri
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                    As the seasonal flower blooms beautifully, born a girl that has an 
-                    indescribable beauty...
-                </Typography>
-                </CardContent>
-            </CardActionArea>
+            <a href={`/${event.id}`} style={anchorStyles}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={event.image}
+                        alt={event.name}
+                    />
+                    <CardContent>
+                    <Typography gutterBottom variant="h6" component="div">
+                        {event.name}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                        {event.desc}
+                    </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </a>
             <CardActions>
                 <Button size="small" color="primary">
                 Drive Link

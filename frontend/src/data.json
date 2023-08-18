@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Misaki no Matsuri",
+        "date": "27 August 2020",
+        "location": "Gwangyang Maehwa Village",
+        "image": "https://images.unsplash.com/photo-1613257125720-c2f8a783416a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "desc": "As the seasonal flower blooms beautifully, born a girl that has an indescribable beauty..."
+    },
+    {
+        "id": 2,
+        "name": "Nikeba no Matsuri",
+        "date": "20 September 2023",
+        "location": "Politeknik Negeri Bali",
+        "image": "https://images.unsplash.com/photo-1598890777032-bde835ba27c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "desc": "An annual event held by Politeknik Negeri Bali"
+    },
+    {
+        "id": 3,
+        "name": "Yeolyora no Matsuri",
+        "date": "1 Juli 2023",
+        "location": "Mall Bali Galeria",
+        "image": "https://images.unsplash.com/photo-1511360823-5c672a170787?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+        "desc": "One of the most big Japanese Events in Bali held by Key Creative Space"
+    },
+    {
+        "id": 4,
+        "name": "Bunkasai Unmas",
+        "date": "23 Agustus 2023",
+        "location": "LP RRI Denpasar Bali",
+        "image": "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80",
+        "desc": "Edelweiss, Edelweiss every morning you greet me small and white clean and bright"
+    }
+]
