@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage';
 import NavBar from './components/NavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GalleryDetail from './pages/GalleryDetail';
+import ShareCard from './components/ShareCard';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/:id' element={<GalleryDetail />} />
+        <Route path='/testmodal' element={<ShareCard />} />
       </Routes>
     </BrowserRouter>
   );
