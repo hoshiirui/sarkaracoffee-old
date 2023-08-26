@@ -24,6 +24,7 @@ interface GalleryCardProps{
         location: string;
         image: string;
         desc: string;
+        drive: string;
     }
 }
 
@@ -70,7 +71,9 @@ const GalleryCard: React.FC<GalleryCardProps> = ({event}) => {
                 </CardActionArea>
             </a>
             <CardActions>
-                <Button size="small" color="primary">Drive Link</Button>
+                <a href={event.drive} target="_blank" rel="noopener noreferrer">
+                    <Button size="small" color="primary">Drive Link</Button>
+                </a>
                 <Button size="small" color="primary" onClick={() => summonModal(event.id)}>Share</Button>
             </CardActions>
             <ModalShare key={event.id} event={currentEvent} open={isShare && event.id === currentEventID} handleClose={() => setIsShare(false)}/>

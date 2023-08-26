@@ -14,10 +14,28 @@ interface FeaturedProps{
         location: string;
         image: string;
         desc: string;
-    }
+        drive: string;
+    }, 
+    isCarousel?: boolean
 }
 
-const Featured: React.FC<FeaturedProps> = ({event}) => {
+const Featured: React.FC<FeaturedProps> = ({event, isCarousel}) => {
+
+  const displayButton = () => {
+    if(isCarousel){
+      return(
+        <Button variant="contained" disableElevation sx={{ backgroundColor: '#FFBCDA' }}>
+          Read More
+        </Button>
+      )
+    }else{
+      return(
+        <Button variant="contained" disableElevation sx={{ backgroundColor: '#FFBCDA' }}>
+          Drive Link
+        </Button>
+      )
+    }
+  }
 
   return (
     <Paper
@@ -59,9 +77,7 @@ const Featured: React.FC<FeaturedProps> = ({event}) => {
             <Typography variant="h6" color="inherit" paragraph>
               {event.location} - {event.date}
             </Typography>
-            <Button variant="contained" disableElevation sx={{ backgroundColor: '#FFBCDA' }}>
-                Drive Link
-            </Button>
+            {displayButton()}
           </Box>
         </Grid>
       </Grid>

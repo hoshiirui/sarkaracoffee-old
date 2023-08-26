@@ -21,6 +21,7 @@ interface ModalShareProps{
       location: string;
       image: string;
       desc: string;
+      drive: string;
   },
   open: boolean, 
   handleClose: () => void;
@@ -32,6 +33,26 @@ const ModalShare: React.FC<ModalShareProps> = ({event, open, handleClose}) => {
   //   dispatch(toggleShareModal(false))
   // }
 
+  const [copySuccess, setCopySuccess] = React.useState(false);
+  const [copySuccessMsg, setCopySuccessMsg] = React.useState('')
+
+  const handleCopyClick = (copiedLink: string, typeLink: string) => {
+    navigator.clipboard.writeText(copiedLink)
+      .then(() => {
+        setCopySuccess(true);
+        if(typeLink === 'url'){
+          setCopySuccessMsg('Event link copied to clipboard!')
+        }else{
+          setCopySuccessMsg('Google Drive link copied to clipboard!')
+        }
+        setTimeout(() => setCopySuccess(false), 3000);
+      })
+      .catch((error) => {
+        console.error('Copy failed:', error);
+      });
+  };
+  
+
   return (
     <div>
       {/* <Dialog open={open}> */}
@@ -39,7 +60,7 @@ const ModalShare: React.FC<ModalShareProps> = ({event, open, handleClose}) => {
         <DialogTitle>Share <b>{event.name}</b> event</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            {event.desc}
+            Click on icon below to copy the link and share the event!
           </DialogContentText>
           {/* <Box sx={{ display: 'flex', alignItems: 'flex-end' }}> */}
             <FormControl fullWidth>
@@ -49,7 +70,8 @@ const ModalShare: React.FC<ModalShareProps> = ({event, open, handleClose}) => {
                 defaultValue={`http://localhost:3000/${event.id}`}
                 size='small'
                 InputProps={{
-                  startAdornment: <InputAdornment position="start"><LinkIcon /></InputAdornment>,
+                  readOnly: true,
+                  startAdornment: <InputAdornment position="start" onClick={() => handleCopyClick(`http://localhost:3000/${event.id}`, 'url')} style={{ cursor: 'pointer' }}><LinkIcon /></InputAdornment>,
                 }}
               />
             </FormControl>
@@ -57,12 +79,14 @@ const ModalShare: React.FC<ModalShareProps> = ({event, open, handleClose}) => {
               <TextField
                 id="outlined-start-adornment"
                 sx={{ mt: 1}}
-                defaultValue={`https://drive.google.com/drive/u/0/folders/1MZKZl_Z3CFZareGLA-nw8qieYMv5vavy`}
+                defaultValue={event.drive}
                 size='small'
                 InputProps={{
-                  startAdornment: <InputAdornment position="start"><FolderIcon /></InputAdornment>,
+                  readOnly: true,
+                  startAdornment: <InputAdornment position="start" onClick={() => handleCopyClick(event.drive, 'drive')} style={{ cursor: 'pointer' }}><FolderIcon /></InputAdornment>,
                 }}
               />
+              {copySuccess && <span style={{ color: 'green', fontSize: '0.8rem' }}>{copySuccessMsg}</span>}
             </FormControl>
           {/* </Box> */}
         </DialogContent>
