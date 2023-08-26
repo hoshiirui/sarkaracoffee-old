@@ -6,8 +6,8 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import {useDispatch} from 'react-redux'
-import { toggleShareModal } from '../features/shareModalSlice';
+// import {useDispatch} from 'react-redux'
+// import { toggleShareModal } from '../features/shareModalSlice';
 import FolderIcon from '@mui/icons-material/Folder';
 import LinkIcon from '@mui/icons-material/Link';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -22,14 +22,15 @@ interface ModalShareProps{
       image: string;
       desc: string;
   },
-  open: boolean
+  open: boolean, 
+  handleClose: () => void;
 }
 
-const ModalShare: React.FC<ModalShareProps> = ({event, open}) => {
-  const dispatch = useDispatch()
-  const handleClose = () => {
-    dispatch(toggleShareModal(false))
-  }
+const ModalShare: React.FC<ModalShareProps> = ({event, open, handleClose}) => {
+  // const dispatch = useDispatch()
+  // const handleClose = () => {
+  //   dispatch(toggleShareModal(false))
+  // }
 
   return (
     <div>
