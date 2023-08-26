@@ -21,6 +21,8 @@ interface FeaturedProps{
 
 const Featured: React.FC<FeaturedProps> = ({event, isCarousel}) => {
 
+  const imgUrl = `/img/${event.id}/thumbnail.jpg`;
+
   const displayButton = () => {
     if(isCarousel){
       return(
@@ -51,7 +53,7 @@ const Featured: React.FC<FeaturedProps> = ({event, isCarousel}) => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundImage: `url(${event.image})`,
+        backgroundImage: `url(${imgUrl})`,
       }}
     >
       {/* Increase the priority of the hero background image */}

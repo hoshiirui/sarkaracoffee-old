@@ -47,6 +47,8 @@ const GalleryCard: React.FC<GalleryCardProps> = ({event}) => {
         console.log(`ini idnya: ${id}`)
     }
 
+    const imgUrl = `/img/${event.id}/thumbnail.jpg`;
+
     // const { open } = useSelector((state: RootState) => state.shareModal)
     // console.log(`event id ${event.id}: ${open}`)
   return (
@@ -57,7 +59,7 @@ const GalleryCard: React.FC<GalleryCardProps> = ({event}) => {
                     <CardMedia
                         component="img"
                         height="140"
-                        image={event.image}
+                        image={imgUrl}
                         alt={event.name}
                     />
                     <CardContent>
@@ -65,7 +67,7 @@ const GalleryCard: React.FC<GalleryCardProps> = ({event}) => {
                         {event.name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        {event.desc}
+                        {event.desc.slice(0, 80) + "...  " }<b>Read More</b>
                     </Typography>
                     </CardContent>
                 </CardActionArea>
