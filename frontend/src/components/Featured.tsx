@@ -24,15 +24,19 @@ const Featured: React.FC<FeaturedProps> = ({event, isCarousel}) => {
   const displayButton = () => {
     if(isCarousel){
       return(
-        <Button variant="contained" disableElevation sx={{ backgroundColor: '#FFBCDA' }}>
-          Read More
-        </Button>
+        <a href={`/${event.id}`}>
+          <Button variant="contained" disableElevation sx={{ backgroundColor: '#FFBCDA' }}>
+            Read More
+          </Button>
+        </a>
       )
     }else{
       return(
-        <Button variant="contained" disableElevation sx={{ backgroundColor: '#FFBCDA' }}>
-          Drive Link
-        </Button>
+        <a href={event.drive} target="_blank" rel="noopener noreferrer">
+          <Button variant="contained" disableElevation sx={{ backgroundColor: '#FFBCDA' }}>
+            Drive Link
+          </Button>
+        </a>
       )
     }
   }
