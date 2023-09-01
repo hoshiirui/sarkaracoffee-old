@@ -1,56 +1,56 @@
 [
-    {
-        "id": 1,
-        "name": "Misaki no Matsuri",
-        "date": "27 August 2020",
-        "location": "Gwangyang Maehwa Village",
-        "image": "https://images.unsplash.com/photo-1613257125720-c2f8a783416a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-        "desc": "As the seasonal flower blooms beautifully, born a girl that has an indescribable beauty...",
-        "drive": "https://drive.google.com/drive/u/0/folders/1MZKZl_Z3CFZareGLA-nw8qieYMv5vavy"
-    },
-    {
-        "id": 2,
-        "name": "Edited Cosplayer Gallery",
-        "date": "Eternally",
-        "location": "Any",
-        "image": "https://images.unsplash.com/photo-1511360823-5c672a170787?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
-        "desc": "One of the most big Japanese Events in Bali held by Key Creative Space",
-        "drive": "https://drive.google.com/drive/folders/1eyGyz_R8HTZggy6YMRikOlWjy9T9tRix?usp=sharing"
-    },
-    {
-        "id": 3,
-        "name": "Bunkasai 9th Unmas",
-        "date": "4 Juni 2023",
-        "location": "LP RRI Denpasar Bali",
-        "image": "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80",
-        "desc": "This event is one of the annual events held by Mahasaraswati University Denpasar (UNMAS). The 9th UNMAS Bunkasai for this year has the theme \"キラキラの祭り\" which translates to \"Sparkling Festival.\" This Glittering Festival will be held on June 3, 2023, for academic competitions, and on the main day, June 4, 2023, for general competitions! ✨",
-        "drive": "https://drive.google.com/drive/folders/1yvwJPUpO-F6QgY0GCCkZczslwTsTeMAh?usp=sharing"
-    },
-    {
-        "id": 4,
-        "name": "Perfect Month for Coswalk Competition",
-        "date": "13 Agustus 2023",
-        "location": "Lippo Mall Kuta",
-        "image": "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80",
-        "desc": "  \"Perfect Month for Coswalk Competition\" is one of the cosplay events organized by Bagie Entertainment, taking place at Lippo Mall Kuta. ",
-        "drive": "https://drive.google.com/drive/folders/1x0agwUptWsNyYPHzAVkGE2PlIHp7BtAT?usp=sharing"
-    },
-    {
-        "id": 5,
-        "name": "TSM Coswalk Competition",
-        "date": "12 Agustus 2023",
-        "location": "Trans Studio Mall Bali",
-        "image": "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80",
-        "desc": "Edelweiss, Edelweiss every morning you greet me small and white clean and bright",
-        "drive": "https://drive.google.com/drive/folders/19wz2TPyMmb7cbfZf_5FIQt_IqFWRSTdZ?usp=sharing"
-    },
-    {
-        "id": 6,
-        "name": "Nikeba no Matsuri",
-        "date": "20 Agustus 2023",
-        "location": "Politeknik Negeri Bali",
-        "image": "https://images.unsplash.com/photo-1598890777032-bde835ba27c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        "desc": "An annual event held by Politeknik Negeri Bali. This year's Nikeba Matsuri #4 of Bali State Polytechnic with the theme \"Haru no Kaze\" which means \"Spring Breeze.\" Just as the spirit, hard work, and creativity of the students will continue to bloom and inspire the lives of the community and the nation.",
-        "drive": "https://drive.google.com/drive/u/0/folders/1MZKZl_Z3CFZareGLA-nw8qieYMv5vavy"
-    }
+  {
+    "id": 1,
+    "name": "Himawari no Matsuri",
+    "date": "27 August 2020",
+    "location": "Gwangyang Maehwa Village",
+    "image": "https://images.unsplash.com/photo-1613257125720-c2f8a783416a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "desc": "As the seasonal flower blooms beautifully, born a girl that has an indescribable beauty...",
+    "drive": "https://drive.google.com/drive/u/0/folders/1MZKZl_Z3CFZareGLA-nw8qieYMv5vavy"
+  },
+  {
+    "id": 2,
+    "name": "Edited Cosplayer Gallery",
+    "date": "Eternally",
+    "location": "Any",
+    "image": "https://images.unsplash.com/photo-1511360823-5c672a170787?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+    "desc": "One of the most big Japanese Events in Bali held by Key Creative Space",
+    "drive": "https://drive.google.com/drive/folders/1eyGyz_R8HTZggy6YMRikOlWjy9T9tRix?usp=sharing"
+  },
+  {
+    "id": 3,
+    "name": "Bunkasai 9th Unmas",
+    "date": "4 Juni 2023",
+    "location": "LP RRI Denpasar Bali",
+    "image": "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80",
+    "desc": "This event is one of the annual events held by Mahasaraswati University Denpasar (UNMAS). The 9th UNMAS Bunkasai for this year has the theme \"キラキラの祭り\" which translates to \"Sparkling Festival.\" This Glittering Festival will be held on June 3, 2023, for academic competitions, and on the main day, June 4, 2023, for general competitions! ✨",
+    "drive": "https://drive.google.com/drive/folders/1yvwJPUpO-F6QgY0GCCkZczslwTsTeMAh?usp=sharing"
+  },
+  {
+    "id": 4,
+    "name": "Perfect Month for Coswalk Competition",
+    "date": "13 Agustus 2023",
+    "location": "Lippo Mall Kuta",
+    "image": "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80",
+    "desc": "  \"Perfect Month for Coswalk Competition\" is one of the cosplay events organized by Bagie Entertainment, taking place at Lippo Mall Kuta. ",
+    "drive": "https://drive.google.com/drive/folders/1x0agwUptWsNyYPHzAVkGE2PlIHp7BtAT?usp=sharing"
+  },
+  {
+    "id": 5,
+    "name": "TSM Coswalk Competition",
+    "date": "12 Agustus 2023",
+    "location": "Trans Studio Mall Bali",
+    "image": "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80",
+    "desc": "Edelweiss, Edelweiss every morning you greet me small and white clean and bright",
+    "drive": "https://drive.google.com/drive/folders/19wz2TPyMmb7cbfZf_5FIQt_IqFWRSTdZ?usp=sharing"
+  },
+  {
+    "id": 6,
+    "name": "Nikeba no Matsuri",
+    "date": "20 Agustus 2023",
+    "location": "Politeknik Negeri Bali",
+    "image": "https://images.unsplash.com/photo-1598890777032-bde835ba27c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "desc": "An annual event held by Politeknik Negeri Bali. This year's Nikeba Matsuri #4 of Bali State Polytechnic with the theme \"Haru no Kaze\" which means \"Spring Breeze.\" Just as the spirit, hard work, and creativity of the students will continue to bloom and inspire the lives of the community and the nation.",
+    "drive": "https://drive.google.com/drive/u/0/folders/1MZKZl_Z3CFZareGLA-nw8qieYMv5vavy"
+  }
 ]
