@@ -1,20 +1,25 @@
-import React from 'react';
-import './App.css';
-import Homepage from './pages/Homepage';
-import NavBar from './components/NavBar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import GalleryDetail from './pages/GalleryDetail';
+import React from "react";
+import "./App.css";
+import Homepage from "./pages/Homepage";
+import NavBar from "./components/NavBar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import GalleryDetail from "./pages/GalleryDetail";
+import Stories from "./pages/Stories";
+import StoryDetail from "./pages/StoryDetail";
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-      <NavBar/>
+      <NavBar />
       <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/:id' element={<GalleryDetail />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/home" element={<Homepage />} />
+        <Route path="/stories" element={<Stories />} />
+        <Route path="/:id" element={<GalleryDetail />} />
+        <Route path="/story" element={<StoryDetail />} />
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

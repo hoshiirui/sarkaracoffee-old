@@ -1,24 +1,28 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import FilterVintageIcon from '@mui/icons-material/FilterVintage';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
+import MenuItem from "@mui/material/MenuItem";
+import FilterVintageIcon from "@mui/icons-material/FilterVintage";
 
-const pages = ['Home', 'Gallery', 'About', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ["Home", "Gallery", "Stories", "About", "Blog"];
+const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function NavBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
+    null
+  );
+  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
+    null
+  );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -36,15 +40,17 @@ function NavBar() {
   };
 
   const anchorStyles = {
-    textDecoration: 'none', // Remove underlining
-    color: 'inherit', // Inherit font color from parent
+    textDecoration: "none", // Remove underlining
+    color: "inherit", // Inherit font color from parent
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#FFBCDA' }}>
+    <AppBar position="static" sx={{ backgroundColor: "#FFBCDA" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <FilterVintageIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <FilterVintageIcon
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+          />
           <a href={`/`} style={anchorStyles}>
             <Typography
               variant="h6"
@@ -53,19 +59,19 @@ function NavBar() {
               href="/"
               sx={{
                 mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
                 fontWeight: 700,
-              //   letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
+                //   letterSpacing: '.3rem',
+                color: "inherit",
+                textDecoration: "none",
               }}
             >
               Okiya's Gallery
             </Typography>
           </a>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -80,30 +86,32 @@ function NavBar() {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
-                <a href={`/`} style={anchorStyles}>
+                <a href={`/${page.toLowerCase()}`} style={anchorStyles}>
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center">{page}</Typography>
+                    <Typography textAlign="center">{page}</Typography>
                   </MenuItem>
                 </a>
               ))}
             </Menu>
           </Box>
-          <FilterVintageIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <FilterVintageIcon
+            sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+          />
           <Typography
             variant="h5"
             noWrap
@@ -111,24 +119,24 @@ function NavBar() {
             href="/"
             sx={{
               mr: 2,
-              display: { xs: 'flex', md: 'none' },
+              display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
             Okiya's Gallery
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <a href={`/`} style={anchorStyles}>
+              <a href={`/${page.toLowerCase()}`} style={anchorStyles}>
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
+                  sx={{ my: 2, color: "white", display: "block" }}
                 >
                   {page}
                 </Button>
