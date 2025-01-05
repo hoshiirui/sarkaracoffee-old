@@ -8,6 +8,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 // import {useSelector, useDispatch} from 'react-redux'
 // import { toggleShareModal } from '../features/shareModalSlice';
 import ModalShare from "./ModalShare";
+import { formatToIDR } from "../utils/idrFormatter";
 
 // interface RootState {
 //     shareModal: {
@@ -15,15 +16,30 @@ import ModalShare from "./ModalShare";
 //     };
 //   }
 
+// interface GalleryCardProps {
+//   event: {
+//     id: number;
+//     name: string;
+//     date: string;
+//     location: string;
+//     image: string;
+//     desc: string;
+//     drive: string;
+//   };
+// }
+
 interface GalleryCardProps {
   event: {
     id: number;
     name: string;
-    date: string;
-    location: string;
-    image: string;
-    desc: string;
-    drive: string;
+    imageSrc: string;
+    price: number;
+    recPrior: number;
+    categories: string[];
+    variant?: {
+      name: string;
+      add: number;
+    }[];
   };
 }
 
@@ -45,7 +61,8 @@ const GalleryCard: React.FC<GalleryCardProps> = ({ event }) => {
     setCurrentEventID(id);
   };
 
-  const imgUrl = `/img/${event.id}/thumbnail.jpg`;
+  // const imgUrl = `/img/menu/${event.imageSrc}`;
+  const imgUrl = `/img/menu/kopi.jpg`;
 
   // const { open } = useSelector((state: RootState) => state.shareModal)
   // console.log(`event id ${event.id}: ${open}`)
@@ -64,25 +81,39 @@ const GalleryCard: React.FC<GalleryCardProps> = ({ event }) => {
               <Typography gutterBottom variant="h6" component="div">
                 {event.name}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {event.desc.slice(0, 80) + "...  "}
-                <b>Read More</b>
+              <Typography
+                variant="h5"
+                color="text.secondary"
+                sx={{
+                  fontVariant: "all-petite-caps",
+                  fontWeight: "bold",
+                  color: "#902D24",
+                }}
+              >
+                {formatToIDR(event.price)}
+              </Typography>
+              <Typography
+                variant="h6"
+                color="text.secondary"
+                sx={{ fontVariant: "all-petite-caps" }}
+              >
+                {event.categories[0]}
               </Typography>
             </CardContent>
           </CardActionArea>
         </a>
         <CardActions>
-          <a href={event.drive} target="_blank" rel="noopener noreferrer">
+          {/* <a href={event.drive} target="_blank" rel="noopener noreferrer">
             <Button size="small" color="primary">
               Drive Link
             </Button>
-          </a>
+          </a> */}
           <Button
             size="small"
-            color="primary"
             onClick={() => summonModal(event.id)}
+            sx={{ color: "#460000" }}
           >
-            Share
+            Detail Menu
           </Button>
         </CardActions>
         <ModalShare

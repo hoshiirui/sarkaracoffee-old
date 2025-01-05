@@ -8,20 +8,22 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 // import {useDispatch} from 'react-redux'
 // import { toggleShareModal } from '../features/shareModalSlice';
-import FolderIcon from "@mui/icons-material/Folder";
-import LinkIcon from "@mui/icons-material/Link";
-import InputAdornment from "@mui/material/InputAdornment";
-import { FormControl } from "@mui/material";
+
+import { CardMedia, Chip, FormControl, Stack, Typography } from "@mui/material";
+import { formatToIDR } from "../utils/idrFormatter";
 
 interface ModalShareProps {
   event: {
     id: number;
     name: string;
-    date: string;
-    location: string;
-    image: string;
-    desc: string;
-    drive: string;
+    imageSrc: string;
+    price: number;
+    recPrior: number;
+    categories: string[];
+    variant?: {
+      name: string;
+      add: number;
+    }[];
   };
   open: boolean;
   handleClose: () => void;
@@ -37,92 +39,68 @@ const ModalShare: React.FC<ModalShareProps> = ({
   //   dispatch(toggleShareModal(false))
   // }
 
-  const [copySuccess, setCopySuccess] = React.useState(false);
-  const [copySuccessMsg, setCopySuccessMsg] = React.useState("");
-
-  const handleCopyClick = (copiedLink: string, typeLink: string) => {
-    navigator.clipboard
-      .writeText(copiedLink)
-      .then(() => {
-        setCopySuccess(true);
-        if (typeLink === "url") {
-          setCopySuccessMsg("Event link copied to clipboard!");
-        } else {
-          setCopySuccessMsg("Google Drive link copied to clipboard!");
-        }
-        setTimeout(() => setCopySuccess(false), 3000);
-      })
-      .catch((error) => {
-        console.error("Copy failed:", error);
-      });
-  };
+  const categories = event.categories || [];
+  const price = event.price || 0;
 
   return (
     <div>
       {/* <Dialog open={open}> */}
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>
-          Share <b>{event.name}</b> event
+          <b>{event.name}</b> Detail Menu
         </DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            Click on icon below to copy the link and share the event!
+          <CardMedia
+            component="img"
+            sx={{ marginBottom: 2 }}
+            height="140"
+            image={`/img/menu/kopi.jpg`}
+            alt={event.name}
+          />
+          <DialogContentText sx={{ marginBottom: 2 }}>
+            The Typography component uses the variantMapping prop to associate a
+            UI variant with a semantic element. It's important to realize that
+            the style of a typography component is independent from the semantic
+            underlying element.
+          </DialogContentText>
+          <DialogContentText sx={{ fontWeight: "bold", color: "#902D24" }}>
+            Harga
+          </DialogContentText>
+          <DialogContentText
+            sx={{
+              marginBottom: 2,
+              marginTop: 0.5,
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            {formatToIDR(price)}
+          </DialogContentText>
+          <DialogContentText sx={{ fontWeight: "bold", color: "#902D24" }}>
+            Penyajian
           </DialogContentText>
           {/* <Box sx={{ display: 'flex', alignItems: 'flex-end' }}> */}
-          <FormControl fullWidth>
-            <TextField
-              id="outlined-start-adornment"
-              sx={{ mt: 1 }}
-              defaultValue={`http://localhost:3000/gallery/${event.id}`}
-              size="small"
-              InputProps={{
-                readOnly: true,
-                startAdornment: (
-                  <InputAdornment
-                    position="start"
-                    onClick={() =>
-                      handleCopyClick(
-                        `http://localhost:3000/${event.id}`,
-                        "url"
-                      )
-                    }
-                    style={{ cursor: "pointer" }}
-                  >
-                    <LinkIcon />
-                  </InputAdornment>
-                ),
-              }}
-            />
-          </FormControl>
-          <FormControl fullWidth>
-            <TextField
-              id="outlined-start-adornment"
-              sx={{ mt: 1 }}
-              defaultValue={event.drive}
-              size="small"
-              InputProps={{
-                readOnly: true,
-                startAdornment: (
-                  <InputAdornment
-                    position="start"
-                    onClick={() => handleCopyClick(event.drive, "drive")}
-                    style={{ cursor: "pointer" }}
-                  >
-                    <FolderIcon />
-                  </InputAdornment>
-                ),
-              }}
-            />
-            {copySuccess && (
-              <span style={{ color: "green", fontSize: "0.8rem" }}>
-                {copySuccessMsg}
-              </span>
-            )}
-          </FormControl>
+
+          <Stack direction="row" spacing={1} sx={{ marginTop: 1 }}>
+            {categories.map((category) => (
+              <Chip
+                key={category}
+                label={category}
+                variant="outlined"
+                sx={{
+                  textTransform: "capitalize",
+                  // Add other styles here if needed
+                }}
+              />
+            ))}
+          </Stack>
+
           {/* </Box> */}
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
+          <Button sx={{ color: "#460000" }} onClick={handleClose}>
+            Close
+          </Button>
         </DialogActions>
       </Dialog>
     </div>

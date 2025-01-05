@@ -12,8 +12,9 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import FilterVintageIcon from "@mui/icons-material/FilterVintage";
+import { CardMedia } from "@mui/material";
 
-const pages = ["Home", "Gallery", "Stories", "About", "Blog"];
+const pages = ["Home", "About Us"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function NavBar() {
@@ -45,20 +46,16 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#FFBCDA" }}>
+    <AppBar position="static" sx={{ backgroundColor: "#460000" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <FilterVintageIcon
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-          />
           <a href={`/`} style={anchorStyles}>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
+            <CardMedia
+              component="img"
+              height="32"
+              image={`sarkaralogo.svg`}
+              alt="green iguana"
               sx={{
-                mr: 2,
                 display: { xs: "none", md: "flex" },
                 fontFamily: "monospace",
                 fontWeight: 700,
@@ -66,9 +63,7 @@ function NavBar() {
                 color: "inherit",
                 textDecoration: "none",
               }}
-            >
-              Okiya's Gallery
-            </Typography>
+            />
           </a>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -109,27 +104,21 @@ function NavBar() {
               ))}
             </Menu>
           </Box>
-          <FilterVintageIcon
-            sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
-          />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="/"
+
+          <CardMedia
+            component="img"
+            height="32"
+            image={`sarkaralogo.svg`}
+            alt="green iguana"
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
+              display: { xs: "inline", md: "none" },
+              maxWidth: "128px", // Limit the maximum width of the image
+              height: "auto", // Maintain aspect ratio
               color: "inherit",
               textDecoration: "none",
             }}
-          >
-            Okiya's Gallery
-          </Typography>
+          />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <a href={`/${page.toLowerCase()}`} style={anchorStyles}>
