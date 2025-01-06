@@ -96,7 +96,10 @@ function NavBar() {
               }}
             >
               {pages.map((page) => (
-                <a href={`/${page.toLowerCase()}`} style={anchorStyles}>
+                <a
+                  href={`/${page.toLowerCase().replace(/ /g, "-")}`}
+                  style={anchorStyles}
+                >
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{page}</Typography>
                   </MenuItem>

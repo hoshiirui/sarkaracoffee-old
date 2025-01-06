@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid";
 import menus from "./../sarkaraMenu.json";
 import { Typography } from "@mui/material";
 import FeaturedCarousel from "../components/FeaturedCarousel";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   return (
@@ -21,6 +22,7 @@ const Homepage = () => {
             <GalleryCard key={event.id} event={event} />
           ))}
         </Grid>
+        <Footer />
       </Container>
     </React.Fragment>
   );
