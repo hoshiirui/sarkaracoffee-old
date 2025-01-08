@@ -14,7 +14,10 @@ import MenuItem from "@mui/material/MenuItem";
 import FilterVintageIcon from "@mui/icons-material/FilterVintage";
 import { CardMedia } from "@mui/material";
 
-const pages = ["Home", "About Us"];
+const pages = [
+  { name: "Home", href: "home" },
+  { name: "About Us", href: "about-us" },
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function NavBar() {
@@ -96,12 +99,9 @@ function NavBar() {
               }}
             >
               {pages.map((page) => (
-                <a
-                  href={`/${page.toLowerCase().replace(/ /g, "-")}`}
-                  style={anchorStyles}
-                >
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                <a href={page.href} style={anchorStyles}>
+                  <MenuItem key={page.href} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page.name}</Typography>
                   </MenuItem>
                 </a>
               ))}
@@ -124,13 +124,13 @@ function NavBar() {
           />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <a href={`/${page.toLowerCase()}`} style={anchorStyles}>
+              <a href={page.href} style={anchorStyles}>
                 <Button
-                  key={page}
+                  key={page.href}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  {page}
+                  {page.name}
                 </Button>
               </a>
             ))}

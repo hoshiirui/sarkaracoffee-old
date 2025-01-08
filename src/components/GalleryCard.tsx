@@ -35,10 +35,12 @@ interface GalleryCardProps {
     imageSrc: string;
     price: number;
     recPrior: number;
+    menuType: string;
     categories: string[];
-    variant?: {
+    productDetail: string;
+    variants?: {
       name: string;
-      add: number;
+      add: number | 0;
     }[];
   };
 }
@@ -61,47 +63,43 @@ const GalleryCard: React.FC<GalleryCardProps> = ({ event }) => {
     setCurrentEventID(id);
   };
 
-  // const imgUrl = `/img/menu/${event.imageSrc}`;
-  const imgUrl = `/img/menu/kopi.jpg`;
-
   // const { open } = useSelector((state: RootState) => state.shareModal)
   // console.log(`event id ${event.id}: ${open}`)
   return (
     <Grid item xs={12} xl={4} lg={4} md={4} sm={6}>
       <Card sx={{ maxWidth: 345 }}>
-        <a href={`/gallery/${event.id}`} style={anchorStyles}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={imgUrl}
-              alt={event.name}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
-                {event.name}
-              </Typography>
-              <Typography
-                variant="h5"
-                color="text.secondary"
-                sx={{
-                  fontVariant: "all-petite-caps",
-                  fontWeight: "bold",
-                  color: "#902D24",
-                }}
-              >
-                {formatToIDR(event.price)}
-              </Typography>
-              <Typography
-                variant="h6"
-                color="text.secondary"
-                sx={{ fontVariant: "all-petite-caps" }}
-              >
-                {event.categories[0]}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </a>
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            height="140"
+            image={`/img/products/${event.menuType}/${event.imageSrc}`}
+            alt={event.name}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h6" component="div">
+              {event.name}
+            </Typography>
+            <Typography
+              variant="h5"
+              color="text.secondary"
+              sx={{
+                fontVariant: "all-petite-caps",
+                fontWeight: "bold",
+                color: "#902D24",
+              }}
+            >
+              {formatToIDR(event.price)}
+            </Typography>
+            <Typography
+              variant="h6"
+              color="text.secondary"
+              sx={{ fontVariant: "all-petite-caps" }}
+            >
+              {event.categories[0]}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
         <CardActions>
           {/* <a href={event.drive} target="_blank" rel="noopener noreferrer">
             <Button size="small" color="primary">

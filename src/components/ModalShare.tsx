@@ -19,10 +19,12 @@ interface ModalShareProps {
     imageSrc: string;
     price: number;
     recPrior: number;
+    menuType: string;
     categories: string[];
-    variant?: {
+    productDetail: string;
+    variants?: {
       name: string;
-      add: number;
+      add: number | 0;
     }[];
   };
   open: boolean;
@@ -54,14 +56,11 @@ const ModalShare: React.FC<ModalShareProps> = ({
             component="img"
             sx={{ marginBottom: 2 }}
             height="140"
-            image={`/img/menu/kopi.jpg`}
+            image={`/img/products/${event.menuType}/${event.imageSrc}`}
             alt={event.name}
           />
           <DialogContentText sx={{ marginBottom: 2 }}>
-            The Typography component uses the variantMapping prop to associate a
-            UI variant with a semantic element. It's important to realize that
-            the style of a typography component is independent from the semantic
-            underlying element.
+            {event.productDetail}
           </DialogContentText>
           <DialogContentText sx={{ fontWeight: "bold", color: "#902D24" }}>
             Harga
@@ -77,11 +76,19 @@ const ModalShare: React.FC<ModalShareProps> = ({
             {formatToIDR(price)}
           </DialogContentText>
           <DialogContentText sx={{ fontWeight: "bold", color: "#902D24" }}>
-            Penyajian
+            Kategori & Penyajian
           </DialogContentText>
           {/* <Box sx={{ display: 'flex', alignItems: 'flex-end' }}> */}
 
           <Stack direction="row" spacing={1} sx={{ marginTop: 1 }}>
+            <Chip
+              label={event.menuType}
+              variant="outlined"
+              sx={{
+                textTransform: "capitalize",
+                // Add other styles here if needed
+              }}
+            />
             {categories.map((category) => (
               <Chip
                 key={category}

@@ -2,322 +2,401 @@
   {
     "id": 1,
     "name": "Sarkara Original Coffee",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "original.jpg",
     "price": 16000,
     "recPrior": 10,
-    "categories": ["signature", "ice"]
+    "menuType": "signature",
+    "categories": ["ice"],
+    "productDetail": "Kopi khas Sarkara dengan perpaduan rasa unik dan menyegarkan."
   },
   {
     "id": 2,
-    "name": "Sarkara Mocktail",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "name": "Sarkara Speciality Mocktail",
+    "imageSrc": "mocktail.jpg",
     "price": 18000,
     "recPrior": 10,
-    "categories": ["signature", "ice"]
+    "menuType": "signature",
+    "categories": ["ice"],
+    "productDetail": "Minuman tanpa alkohol dengan kombinasi rasa istimewa dan menyegarkan."
   },
   {
     "id": 3,
     "name": "Espresso Single",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "single.webp",
     "price": 10000,
     "recPrior": 10,
-    "categories": ["espresso", "hot"]
+    "menuType": "espresso",
+    "categories": ["hot"],
+    "productDetail": "Espresso klasik dengan cita rasa kuat dan aroma khas kopi."
   },
   {
     "id": 4,
     "name": "Espresso Double",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "double.webp",
     "price": 12000,
     "recPrior": 6,
-    "categories": ["espresso", "hot"]
+    "menuType": "espresso",
+    "categories": ["hot"],
+    "productDetail": "Espresso ganda dengan intensitas rasa yang lebih kuat."
   },
   {
     "id": 5,
     "name": "Americano",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "americano.webp",
     "price": 15000,
     "recPrior": 6,
-    "categories": ["espresso", "hot", "ice"]
+    "menuType": "espresso",
+    "categories": ["hot", "ice"],
+    "productDetail": "Espresso yang diencerkan dengan air panas atau dingin, cocok bagi pencinta kopi hitam."
   },
   {
     "id": 6,
     "name": "Kopi Susu",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "kopisusu.webp",
     "price": 15000,
     "recPrior": 6,
-    "categories": ["coffee", "hot", "ice"]
+    "menuType": "coffee",
+    "categories": ["hot", "ice"],
+    "productDetail": "Perpaduan kopi dengan susu, menghasilkan rasa yang lembut dan nikmat."
   },
   {
     "id": 7,
     "name": "Latte",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "latte.webp",
     "price": 15000,
     "recPrior": 6,
-    "categories": ["coffee", "hot", "ice"]
+    "menuType": "coffee",
+    "categories": ["hot", "ice"],
+    "productDetail": "Espresso dengan susu kukus, menghasilkan rasa yang creamy dan lembut."
   },
   {
     "id": 8,
     "name": "Latte + Syrup",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "lattesyr.jpg",
     "price": 20000,
-    "recPrior": 7,
-    "categories": ["coffee", "hot", "ice"]
+    "recPrior": 6,
+    "menuType": "coffee",
+    "categories": ["hot", "ice"],
+    "productDetail": "Latte dengan tambahan sirup pilihan, memberikan variasi rasa yang menarik."
   },
   {
     "id": 9,
     "name": "Cappucino",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "cappucino.webp",
     "price": 17000,
     "recPrior": 6,
-    "categories": ["coffee", "hot", "ice"]
+    "menuType": "coffee",
+    "categories": ["hot", "ice"],
+    "productDetail": "Espresso dengan susu kukus dan buih susu yang lembut, menghasilkan rasa yang kaya."
   },
   {
     "id": 10,
     "name": "Mochacino",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "mochaccino.jpg",
     "price": 17000,
     "recPrior": 6,
-    "categories": ["coffee", "hot", "ice"]
+    "menuType": "coffee",
+    "categories": ["hot", "ice"],
+    "productDetail": "Cappucino dengan tambahan cokelat, menghasilkan rasa yang manis dan nikmat."
   },
   {
     "id": 11,
     "name": "Matcha Coffee Milk",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "matchacoffee.jpg",
     "price": 20000,
     "recPrior": 6,
-    "categories": ["coffee", "ice"]
+    "menuType": "coffee",
+    "categories": ["ice"],
+    "productDetail": "Perpaduan matcha dengan kopi dan susu, menghasilkan rasa unik dan menyegarkan."
   },
   {
     "id": 12,
     "name": "Redvelvet Coffee Milk",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "redvelvetcoffee.jpg",
     "price": 20000,
     "recPrior": 6,
-    "categories": ["coffee", "ice"]
+    "menuType": "coffee",
+    "categories": ["ice"],
+    "productDetail": "Kopi dengan cita rasa red velvet yang lembut dan creamy."
   },
   {
     "id": 13,
     "name": "Oreo Coffee Milk",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "redvelvetcoffee.jpg",
     "price": 20000,
     "recPrior": 6,
-    "categories": ["coffee", "ice"]
+    "menuType": "coffee",
+    "categories": ["ice"],
+    "productDetail": "Kopi dengan tambahan biskuit Oreo, menghadirkan rasa yang unik dan renyah."
   },
   {
     "id": 14,
     "name": "Matcha Latte",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "matchalatte.jpg",
     "price": 16000,
     "recPrior": 6,
-    "categories": ["non-coffee", "hot", "ice"]
+    "menuType": "non-coffee",
+    "categories": ["hot", "ice"],
+    "productDetail": "Minuman hangat atau dingin dengan teh hijau matcha yang lembut dan menyegarkan."
   },
   {
     "id": 15,
     "name": "Redvelvet Latte",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "redvelvetlatte.jpeg",
     "price": 16000,
     "recPrior": 6,
-    "categories": ["non-coffee", "hot", "ice"]
+    "menuType": "non-coffee",
+    "categories": ["hot", "ice"],
+    "productDetail": "Latte dengan cita rasa red velvet yang lembut dan creamy."
   },
   {
     "id": 16,
     "name": "Taro Latte",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "tarolatte.webp",
     "price": 16000,
     "recPrior": 6,
-    "categories": ["non-coffee", "hot", "ice"]
+    "menuType": "non-coffee",
+    "categories": ["hot", "ice"],
+    "productDetail": "Latte dengan rasa taro yang unik dan eksotis."
   },
   {
     "id": 17,
     "name": "Chocolatte",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "chocolatte.jpg",
     "price": 16000,
     "recPrior": 6,
-    "categories": ["non-coffee", "hot", "ice"]
+    "menuType": "non-coffee",
+    "categories": ["hot", "ice"],
+    "productDetail": "Minuman cokelat hangat atau dingin yang kaya dan lembut."
   },
   {
     "id": 18,
     "name": "Vanilla Milk Original",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "vanillamilk.jpg",
     "price": 15000,
     "recPrior": 6,
-    "categories": ["non-coffee", "hot", "ice"]
+    "menuType": "non-coffee",
+    "categories": ["hot", "ice"],
+    "productDetail": "Susu segar dengan aroma dan rasa vanilla yang lembut."
   },
   {
     "id": 19,
     "name": "Vanilla Caramel",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "vanillacaramel.jpg",
     "price": 16000,
     "recPrior": 6,
-    "categories": ["non-coffee", "ice"]
+    "menuType": "non-coffee",
+    "categories": ["ice"],
+    "productDetail": "Susu vanilla dengan tambahan saus karamel, menghasilkan rasa yang manis dan karamelis."
   },
   {
     "id": 20,
     "name": "Vanilla Hazelnut",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "vanillahazelnut.jpeg",
     "price": 16000,
     "recPrior": 6,
-    "categories": ["non-coffee", "ice"]
+    "menuType": "non-coffee",
+    "categories": ["ice"],
+    "productDetail": "Susu vanilla dengan aroma dan rasa hazelnut yang khas."
   },
   {
     "id": 21,
     "name": "Vanilla Oreo",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "vanillaoreo.jpeg",
     "price": 16000,
     "recPrior": 6,
-    "categories": ["non-coffee", "ice"]
+    "menuType": "non-coffee",
+    "categories": ["ice"],
+    "productDetail": "Susu vanilla dengan campuran biskuit Oreo yang renyah."
   },
   {
     "id": 22,
     "name": "Choco Hazelnut",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "chocohazelnut.jpg",
     "price": 18000,
     "recPrior": 6,
-    "categories": ["non-coffee", "ice"]
+    "menuType": "non-coffee",
+    "categories": ["ice"],
+    "productDetail": "Minuman cokelat dengan aroma dan rasa hazelnut yang khas."
   },
   {
     "id": 23,
     "name": "Choco Oreo",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "chocooreo.webp",
     "price": 18000,
     "recPrior": 6,
-    "categories": ["non-coffee", "ice"]
+    "menuType": "non-coffee",
+    "categories": ["ice"],
+    "productDetail": "Minuman cokelat dengan campuran biskuit Oreo yang renyah."
   },
   {
     "id": 24,
     "name": "Tea",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "tea.jpg",
     "price": 6000,
     "recPrior": 6,
-    "categories": ["others", "hot", "ice"]
+    "menuType": "others",
+    "categories": ["hot", "ice"],
+    "productDetail": "Teh panas atau dingin yang menyegarkan."
   },
   {
     "id": 25,
     "name": "Leci Tea",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "lycheetea.jpg",
     "price": 10000,
     "recPrior": 6,
-    "categories": ["others", "hot", "ice"]
+    "menuType": "others",
+    "categories": ["hot", "ice"],
+    "productDetail": "Teh dengan rasa leci yang manis dan menyegarkan."
   },
   {
     "id": 26,
     "name": "Lemon Tea",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "lemontea.jpg",
     "price": 10000,
     "recPrior": 6,
-    "categories": ["others", "hot", "ice"]
+    "menuType": "others",
+    "categories": ["hot", "ice"],
+    "productDetail": "Teh dengan perasan lemon, memberikan rasa yang segar dan asam."
   },
   {
     "id": 27,
     "name": "Strawberry Tea",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "strawberrytea.jpg",
     "price": 10000,
     "recPrior": 6,
-    "categories": ["others", "hot", "ice"]
+    "menuType": "others",
+    "categories": ["hot", "ice"],
+    "productDetail": "Teh dengan rasa stroberi yang manis dan menyegarkan."
   },
   {
     "id": 28,
     "name": "Virgin Squash",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "virginsquash.jpg",
     "price": 15000,
     "recPrior": 6,
-    "categories": ["others", "ice"]
+    "menuType": "others",
+    "categories": ["ice"],
+    "productDetail": "Minuman segar dengan rasa buah-buahan."
   },
   {
     "id": 29,
     "name": "Strawberry Squash",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "strawberrysquash.jpg",
     "price": 15000,
     "recPrior": 6,
-    "categories": ["others", "ice"]
+    "menuType": "others",
+    "categories": ["ice"],
+    "productDetail": "Minuman segar dengan rasa stroberi yang manis dan menyegarkan."
   },
   {
     "id": 30,
     "name": "Lemon Squash",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "lemonsquash.jpg",
     "price": 15000,
     "recPrior": 6,
-    "categories": ["others", "ice"]
+    "menuType": "others",
+    "categories": ["ice"],
+    "productDetail": "Minuman segar dengan rasa lemon yang asam dan menyegarkan."
   },
   {
     "id": 31,
     "name": "Leci Squash",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "lycheesquash.jpeg",
     "price": 15000,
     "recPrior": 6,
-    "categories": ["others", "ice"]
+    "menuType": "others",
+    "categories": ["ice"],
+    "productDetail": "Minuman segar dengan rasa leci yang manis dan menyegarkan."
   },
   {
     "id": 32,
     "name": "Mineral Water",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "mineralwater.jpeg",
     "price": 5000,
     "recPrior": 6,
-    "categories": ["others", "hot", "ice"]
+    "menuType": "others",
+    "categories": ["hot", "ice"],
+    "productDetail": "Air mineral untuk menemani hidangan Anda."
   },
   {
     "id": 33,
     "name": "Nasi Goreng",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "nasgor.jpg",
     "price": 15000,
     "recPrior": 6,
-    "categories": ["food"]
+    "menuType": "food",
+    "categories": [],
+    "productDetail": "Nasi goreng yang lezat dan mengenyangkan."
   },
   {
     "id": 34,
     "name": "Mie Instan Goreng Lengkap",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "miegoreng.jpg",
     "price": 12000,
     "recPrior": 6,
-    "categories": ["food"]
+    "menuType": "food",
+    "categories": [],
+    "productDetail": "Mie instan goreng yang lengkap dengan bumbu dan topping."
   },
   {
     "id": 35,
     "name": "Mie Instan Kuah Lengkap",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "miekuah.jpeg",
     "price": 12000,
     "recPrior": 6,
-    "categories": ["food"]
+    "menuType": "food",
+    "categories": [],
+    "productDetail": "Mie instan kuah yang lengkap dengan bumbu dan topping."
   },
   {
     "id": 36,
     "name": "Nasi Putih",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "nasiputih.webp",
     "price": 5000,
     "recPrior": 6,
-    "categories": ["food"]
+    "menuType": "food",
+    "categories": [],
+    "productDetail": "Nasi putih hangat yang siap disajikan."
   },
   {
     "id": 37,
     "name": "Telur",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "telur.jpg",
     "price": 5000,
     "recPrior": 6,
-    "categories": ["food"]
+    "menuType": "food",
+    "categories": [],
+    "productDetail": "Telur sebagai lauk pendamping."
   },
   {
     "id": 38,
     "name": "Kentang Goreng",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "kentanggoreng.jpg",
     "price": 10000,
     "recPrior": 6,
-    "categories": ["food"]
+    "menuType": "food",
+    "categories": [],
+    "productDetail": "Kentang goreng renyah dan gurih."
   },
   {
     "id": 39,
     "name": "Roti Panggang",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "ropang.webp",
     "price": 10000,
     "recPrior": 6,
-    "categories": ["food"]
+    "menuType": "food",
+    "categories": [],
+    "productDetail": "Roti panggang yang hangat dan lezat."
   },
   {
     "id": 40,
     "name": "Pisang Goreng",
-    "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "imageSrc": "pisanggoreng.jpg",
     "price": 10000,
     "recPrior": 6,
-    "categories": ["food"],
+    "menuType": "food",
+    "categories": [],
     "variants": [
       {
         "name": "coklat",
@@ -331,6 +410,7 @@
         "name": "mix",
         "add": 2000
       }
-    ]
+    ],
+    "productDetail": "Pisang goreng renyah dengan pilihan topping cokelat, keju, atau mix."
   }
 ]
